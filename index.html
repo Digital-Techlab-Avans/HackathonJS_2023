@@ -6,10 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TeachR Packr</title>
     <script src="app.js" defer></script>
+    <link href="fa/css/fontawesome.css" rel="stylesheet">
+  <link href="fa/css/brands.css" rel="stylesheet">
+  <link href="fa/css/solid.css" rel="stylesheet">
+
+  <script src="components/conveyerbelt.js"></script>
+  <script src="components/box.js"></script>
+
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-<h1>    Teachr Pack
+<h1>    Teachr PackR
    </h1>
+
+   <div class="symbols">
+      <div class="bucketContainer" id="correct">
+        0
+      </div>
+      <div class="bucketContainer">
+        <div id="bucket1" class="bucketStyle" draggable="true"><i id="bucketicon1"></i></div>
+      </div>
+      <div class="bucketContainer">
+        <div id="bucket2" class="bucketStyle" draggable="true"><i id="bucketicon2"></i></div>
+      </div>
+
+      <div class="bucketContainer" id="wrong">
+        0
+      </div>
+   </div>
+  <!-- <div id="bin" ><i class="fa-solid fa-trash"></i></div> -->
+
+   <conveyer-belt width="20" speed="40"></conveyer-belt>
+   <conveyer-belt width="20" speed="40"></conveyer-belt>
+   <conveyer-belt width="20" speed="40"></conveyer-belt>
+
 
 </body>
 </html>
